@@ -1,0 +1,136 @@
+body{
+    text-align: center;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffd66d;
+    color: black;
+    color: white;
+    padding: 2rem;
+}
+
+
+.title-text{
+    font-size: 3rem;
+    padding: 1% 10%;
+    margin-bottom: 5rem;
+}
+.title-text:hover{
+    color: rgb(37, 28, 28);
+}
+
+.elements{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.element{
+    box-shadow: 0 4px 15px rgba(0, 0,0, 0.3);
+    border-radius: 15px;
+    min-width: 15em;
+    height: 13em;
+    position: relative;
+}
+
+.element{
+    transition: all 0.3s ease;
+}
+.element:hover{
+    transform: scale(1.05);
+    
+}
+
+.main .elements .e-1{
+background-color: #E3ACF9;
+/* background-image: url(../img/celsius.png); */
+}
+
+.main .elements .e-2{
+    background-color: #BAD7E9;
+}
+
+.main .elements .e-3{
+    background-color: #FFD4D4;
+}
+
+.element h2 , .element input{
+    position: relative;
+}
+
+.element h2{
+     text-align: left;
+     left: 10px;
+     color: rgb(20, 19, 19);
+     color: white;
+}
+
+.element input::-webkit-outer-spin-button,
+.element input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+     margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+.element input{
+    text-align: center;
+    border: none;
+    outline: none;
+    background: none;
+    margin-top: 0.3em;
+    width: 4em;
+    height: 2em;
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+.element input:focus{
+    color: rgb(37, 28, 28);
+}
+
+
+.footer-area{
+    padding: 5rem 0;
+    padding-bottom: 0%;
+}
+
+.footer-area .social h5{
+    font: normal 700 30px/ 30px var(--roboto);
+
+}
+
+footer.footer-area .social a > i{
+    color: white;
+    font-size:22px;
+    padding: 2rem;
+    transition: all 0.2s ease;
+}
+
+footer.footer-area .social a:hover > i{
+    color: #000;
+    transform: scale(1.24);
+}
+
+@media screen and  (max-width:550px){
+    .element{
+        min-width: 1em;
+        height: 7em;
+    }
+    .element input{
+        width: 4em;
+        height: 1em;
+        font-size: 1.8rem;
+        padding: 0;
+    }
+    .element h2{
+        font-size: medium;
+   }
+   .title-text{
+    font-size: 2rem;
+}
+    
+}
